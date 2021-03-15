@@ -3,9 +3,7 @@
 " ==================================================
 call plug#begin()
 
-Plug 'tpope/vim-dispatch' " asynchronous build and test dispatcher
-
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}  "Interactive command execution in Vim. 
+Plug 'Shougo/deol.nvim' " terminal in vim
 
 Plug 'tpope/vim-fugitive' " git wrapper
 
