@@ -33,7 +33,7 @@ endif
 
 " \v loads .vimrc
 " \V reloads .vimrc -- activating changes (needs save)
-map <leader>v :sp ~/.vimrc<CR><C-W>_
+
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 "autocmd! bufwritepost $MYVIMRC source $MYVIMRC %
@@ -64,13 +64,10 @@ imap <C-W> <C-O><C-W>
 map - <C-W>-
 map + <C-W>+
 
+    map <C-W>, :sp<CR><C-w>j " Horizontal split
+    map <C-W>. :vsp<CR><C-w>l " Vertical split
+    map <C-/> :close<CR>
 
-    map <M-,> :sp<CR><C-w>j " Horizontal split
-    map <M-.> :vsp<CR><C-w>l " Vertical split
-    map <M-/> :close<CR> 
-
-    map <M-<> <C-w>K " Convert vertical to horizontal split
-    map <M->> <C-w>L " Convert horizontal to vertical split
 
 " F2 close current split (window)
 noremap <F2> <Esc>:close<CR><Esc>
@@ -90,7 +87,7 @@ nmap <leader>d :b#<bar>bd#<CR>
 "
 " Probably would be better to use unimapaired's coh
 " ==================================================
-noremap <F4> :set hlsearch! hlsearch?<CR>
+noremap <F4> :Deol<CR><C-W>j
 "
 
 

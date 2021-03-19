@@ -12,13 +12,13 @@
 " <F4> - Toggle search highlight
 " - and + - Resize horizontal splits
 " <CTRL>-L redraws window 
-" <Alt>, - horizontal split
-" <Alt>. - vertical split
+" <CTRL-W>, - horizontal split
+" <CRTL-W>. - vertical split
 " <F2> - Close current split (window)
 " <F3> - Toggle NERD tree
 " <F4> - Toggle search highlight
 " <F5> - Toggle Tagbar
-" <F6> - Autoformat
+" <Fsosourcee- Autoformat
 
 " ==================================================
 " Allow pre-definitions via ~/.vim/vimrc.before
