@@ -12,9 +12,8 @@ My vim as an IDE setup, intended to replace the slow and bloated mess of text ed
 * 70+ language packs support
 * Syntax checking
 * Snippets
-* Quotes, parens etc pair, surround
+* Quotes, parentheses, etc paired
 * Fuzzy file, buffer, mru, tag, etc finder
-* VCS plugins (Fugitive, Lawrencium)
 * Easy tab navigation
 
 ## Prerequisites
