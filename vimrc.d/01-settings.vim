@@ -41,13 +41,13 @@ set noswapfile "no troublesome swapfile bs
 set autowrite " write when switching files
 
 set modifiable " Allow autocommands to function as intended
-
+set nocompatible
 
 syntax on
 filetype plugin on
 filetype indent plugin on
 
-
+set gdefault " Add the g flag to search/replace by default
 
 
 " ==================================================
@@ -73,6 +73,15 @@ set smartcase            " if searching and search contains upper case, make cas
 " ==================================================
 set modelines=0
 set nomodeline
+" ==================================================
+" Enable per-directory .vimrc files and disable unsafe commands in them
+" ==================================================
+set exrc
+set secure
 
+" Show the (partial) command as it’s being typed
+set showcmd
 
+" Save a file as root (\W)
+noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
