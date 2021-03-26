@@ -111,4 +111,4 @@ noremap <F6> :Autoformat<CR>
 function! FixLastSpellingError()
     normal! mm[s1z=`m"
 endfunction
-nnoremap <leader>sc :call FixLastSpellingError()<cr>
+nnoremap <leader>spc :call FixLastSpellingError()<cr>
