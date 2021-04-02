@@ -79,7 +79,7 @@ nmap <leader>d :b#<bar>bd#<CR>
 " ==================================================
 " Clean all end of line whitespace with <Leader>S
 " ==================================================
-:nnoremap <silent><leader>S :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+nnoremap <silent><leader>S :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 
 " ==================================================

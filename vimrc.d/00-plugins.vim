@@ -28,7 +28,6 @@ Plug 'MarcWeber/vim-addon-mw-utils'  " interpret a file by function and cache fi
 
 Plug 'vim-scripts/DrawIt' "Ascii drawing plugin: lines, ellipses, arrows, fills, and more!
 
-Plug 'tpope/vim-surround' " quoting/parenthesizing made simple
 
 Plug 'vim-scripts/Shebang' "Make executable by setting the correct shebang and executable bit
 
@@ -45,26 +44,17 @@ Plug 'vim-scripts/TaskList.vim' "Eclipse like task list
 
 Plug 'vim-scripts/matchit.zip' "Extended % matching for HTML, LaTeX, and many other languages
 
-Plug 'godlygeek/tabular' " text filtering and alignment
-
-
 Plug 'powerman/vim-plugin-viewdoc' "view documentation
 
 Plug 'vim-airline/vim-airline' " status bar
 
 Plug 'vim-airline/vim-airline-themes' " status bar themes
 
-
-
-
-
 Plug 'tpope/vim-unimpaired' "Pairs of handy bracket mappings
-
 
 Plug 'AndrewRadev/splitjoin.vim' " A vim plugin that simplifies the transition between multiline and single-line code
 
 Plug 'tpope/vim-repeat' " enable repeating supported plugin maps with .
-
 
 Plug 'machakann/vim-highlightedyank' " obvious yank area
 
@@ -78,19 +68,12 @@ Plug 'xolox/vim-misc' "Miscellaneous auto-load Vim scripts
 
 Plug 'vimwiki/vimwiki' " note taking system 
 
-
-
 Plug 'mhinz/vim-startify' " startup banner display
 
 Plug 'chiel92/vim-autoformat' " enables formatting of code with keystroke 
 
 
-
-
 Plug 'reedes/vim-pencil' " text editing suite to ease writing 
-
-
-
 
 Plug 'ryanb/dotfiles' "dotfiles syntax
 
