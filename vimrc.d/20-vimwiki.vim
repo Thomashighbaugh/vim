@@ -24,3 +24,4 @@ let g:vimwiki_list = [wiki, wiki2]
 let g:vimwiki_use_mouse = 1
 let g:vimwiki_folding = 'expr'
 let g:vimwiki_auto_chdir = 1
+let g:vimwiki_table_mappings = 0

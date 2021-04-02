@@ -1,17 +1,15 @@
 extends md, mdx
 
-snippet "topictemplate"["A template for topics in the tech vimwiki"[A]]
-# Topic Index
+snippet topic "A template for topics in the tech vimwiki" A
+# ${1:title}
 
 ## Description
 
-This section defines the topic or subtopic, at least within this context.
+${2:description}
 
 ## Subtopics
 
-- [[subtopic|Subtopic]]
-- [[subtopic|Subtopic]]
-- [[subtopic|Subtopic]]
+- [subtopic](subtopic.md)
 
 ## Notes
 
@@ -32,16 +30,15 @@ This section defines the topic or subtopic, at least within this context.
 - Course 2
 endsnippet
 
-snippet "articletemplate"["Template for Notes on Articles I am Reading"[A]]
-# Article Template
+snippet article "Template for Notes on Articles I am Reading" A
+# ${1:title}
 
-**From**: [Article](https://example.com/article), [Video](https://example.com/video), [Book PDF](https://example.com/if-available)
+**From**: [${2:article}](${3:url})
 
 ## Notes on Content
 
-- Maximilian Notes Rides Again
-    - Notes relating entirely to the content of the article
-      - sans editorial remarks or opinions about the subject
+- ${4:notes}
+  
 
 ## Editorial Notes
 
@@ -50,61 +47,54 @@ snippet "articletemplate"["Template for Notes on Articles I am Reading"[A]]
 
 ## Links
 
-- [Links from the article](https://example.com/links)
-- [That are worth exploring](https://example.com/explore)
-- [And Possibly Deleting If They Get Their Own Notes](https://example.com/remove)
+- Links from the article](https://example.com/links)
+- That are worth exploring](https://example.com/explore)
+- And Possibly Deleting If They Get Their Own Notes](https://example.com/remove)
 endsnippet
-snippet "projecttemplate"["For On Going Projects"[A]] 
-# Project Title
+snippet project "For On Going Projects" A 
+# ${1:title}
 
 ## Description
 
-This section describes the project broadly. 
+${2:description}
 
 ## Goal 
 
-This section explains my reasons for embarking on the project in the first place; what I've set out to achieve. 
+${3:goals}
 
 ## Tech Stack 
-- here is 
-- a list
-- of the technologies used - with some explanation as to why if necessary
+- ${4:techstack}
 
 ## Planning
-- these are notes on the planning process that precedes the project
-- at times this will be an extensive portion of the project's write up but other times it may not even exist. 
+- ${5:planning}
 
 ## Execution
-- This section is detailed notes on how the project went/is going
-- and can feature project reminders, to-do items, etc.
+${6:execution}
 
 ## Final Thoughts 
-This is a self assessment of the project after it is complete, giving me space to tack on things to do later, criticize my own work and plan my subsequent projects in light of this one. 
+${7:final thoughts}
 endsnippet
-snippet "lessontemplate"["For individual lessons within a course"[A]]
-# Course Notes - Lesson
+snippet lesson "For individual lessons within a course" A
+# ${1:course} - ${2:Lesson}
 
 ## Lesson Topic
-The general purpose of the lesson or topic upon which it revolved.
+${3:lesson topic}.
 
 ## House Keeping Notes
 
-- Anything that relates to the course or its conduct
-- that doesn't relate to the subject matter of the course
-  - like exam dates;
-  - or advise from the instructor about something
+- ${4:house keeping notes}
 
 ## Content Notes
 
-- notes about the lesson
-  - note maximilian time
+- ${5:content notes}
+
 endsnippet
-snippet "coursetemplate"["For the index of a course" [A]]
-# Course Notes - Index
+snippet course "For the index of a course" A
+# ${1:course title} - Index
 
 ## Details About Course
 
-Information about the course and a general outline of the content within it.
+${2: details on the course}
 
 ## Sections of Course 
 
@@ -114,12 +104,12 @@ Information about the course and a general outline of the content within it.
 | Section 2 | A more specific nothing |
 
 endsnippet
-snippet "sectiontemplate"["Course section index"[A]]
-# Course Notes - Section 
+snippet section "Course section index" A
+# ${1:course title} - ${2:section title} 
 
 ## Section Outline
 
-A rough introduction to what the section is about in general
+${3:section introduction}
 
 ## Lessons Within Section
 

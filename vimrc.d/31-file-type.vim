@@ -30,7 +30,8 @@ autocmd Filetype javascript setlocal ts=4 sw=4 sts=0 noexpandtab
 autocmd Filetype python setlocal omnifunc=jedi#completions tw=79
                                 \ completeopt-=preview
                                 \ formatoptions+=c
-
+" set filetypes as typescriptreact
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
 " snipMate
 " autocmd FileType python set ft=python.django " For SnipMate
 autocmd FileType html set ft=htmldjango.html " For SnipMate

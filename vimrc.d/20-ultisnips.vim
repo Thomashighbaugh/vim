@@ -8,3 +8,4 @@ let g:UltiSnipsEditSplit="tabdo"
 
 "Define the snippet directory
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips']
+let g:snips_author="Thomas Leon Highbaugh <admin@thomasleonhighbaugh.me>"
