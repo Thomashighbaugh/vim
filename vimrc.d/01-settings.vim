@@ -29,7 +29,7 @@ set history=500          " larger history
 set timeout ttimeoutlen=50
 set confirm " Instead of failing a command because of unsaved changes, instead raise a  dialogue asking if you wish to save changed files.
 set hidden " quickly move between buffers without saving prompt
-
+set spell spelllang=en_us
 set splitright           " Splits to the right
 autocmd VimResized * wincmd =   " Automatically equalize splits when Vim is resized
 

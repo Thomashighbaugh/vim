@@ -72,7 +72,7 @@ map + <C-W>+
 " F2 close current split (window)
 noremap <F2> <Esc>:close<CR><Esc>
 
-" Deleter buffer, keep the split (switch to prev buf, delete now prev buf)
+" Delete buffer, keep the split (switch to prev buf, delete now prev buf)
 nmap <leader>d :b#<bar>bd#<CR>
 
 
@@ -92,23 +92,19 @@ noremap <F4> :Deol<CR><C-W>j
 
 
 
-" Map <C-L> (redraw screen) to also turn off search highlighting until the
+" Map <C-l> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-l> :nohl<cr><c-l>
 
 
 
 " New Tab Control + t
-map <C-t> :tabnew<CR>
+map <F10> :tabnew<CR>
 
 " Navigate Tabs Control+n Control+m
-map <C-m> :tabp<CR>
-map <C-n> :tabn<CR>
+map <F11> :tabp<CR>
+map <F12> :tabn<CR>
 
 " AutoFormat Command
 noremap <F6> :Autoformat<CR>
 
-function! FixLastSpellingError()
-    normal! mm[s1z=`m"
-endfunction
-nnoremap <leader>spc :call FixLastSpellingError()<cr>

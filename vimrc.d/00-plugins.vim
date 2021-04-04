@@ -3,7 +3,13 @@
 " ==================================================
 call plug#begin()
 
-Plug 'neoclide/coc.nvim'
+Plug 'PhilRunninger/nerdtree-visual-selection'
+
+Plug 'prabirshrestha/vim-lsp'
+
+Plug 'mattn/vim-lsp-settings'
+
+Plug 'ryanoasis/vim-devicons'
 
 Plug 'frazrepo/vim-rainbow'
 
@@ -90,6 +96,7 @@ Plug 'editorconfig/editorconfig-vim' "use of editor config within
 
 Plug 'scrooloose/nerdcommenter'
 
+Plug 'NLKNguyen/copy-cut-paste.vim'
 
 Plug 'farmergreg/vim-lastplace'
 
@@ -97,10 +104,6 @@ Plug 'rakr/vim-one'
 " Over 70 language packs
 Plug 'sheerun/vim-polyglot'
 
-    " Vim 8.0: Alternative async-completor plugin
-    " built-in support for python (jedi), java, etc.
-    Plug 'maralla/completor.vim'
-    Plug 'w0rp/ale'
-
+Plug 'w0rp/ale'
 
 call plug#end()
