@@ -1,6 +1,6 @@
 # Vim Configuration 
 
-My vim as an IDE setup, intended to replace the slow and bloated mess of text editors I have used. 
+My Linux addiction is reaching such a critical stage as such a configuration, within its own repository has been my fate.
 
 
 

@@ -1,9 +1,6 @@
 " ===================================================================
-" FileType and Indentation settings
-"
-" Recommended: Don't rely on this, use editorconfig " in your project
+" == File Types & Indentation ======================================= 
 " ===================================================================
-
 
 " define less filetype
 au BufNewFile,BufRead *.less set filetype=less

@@ -1,4 +1,7 @@
 " ==================================================
+" == Settings ======================================
+" ==================================================
+" ==================================================
 " Basic Settings
 " ==================================================
 set ch=2                 " Make command line two lines high
@@ -39,6 +42,7 @@ set completeopt=menu            " Just show the menu upon completion (faster)
 
 set noswapfile "no troublesome swapfile bs
 set autowrite " write when switching files
+
 
 set modifiable " Allow autocommands to function as intended
 set nocompatible
