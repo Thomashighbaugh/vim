@@ -3,10 +3,10 @@
 " ==============================================
 "
 " better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsExpandTrigger='<Tab>'
 let g:UltiSnipsJumpForwardTrigger='<c-j>'
 let g:UltiSnipsJumpBackwardTrigger='<c-k>'
-let g:UltiSnipsListSnippets='<M-c-tab>'
+let g:UltiSnipsListSnippets='<S-C-Tab>'
 "Open UtilSnipsEdit Window in a New Tab
 let g:UltiSnipsEditSplit='tabdo'
 

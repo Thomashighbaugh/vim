@@ -1,6 +1,6 @@
 extends md, mdx
 
-snippet !topic "A template for topics in the tech vimwiki" A
+snippet topic "A template for topics in the tech vimwiki" A
 # ${1:title}
 
 ## Description
@@ -30,7 +30,7 @@ ${2:description}
 - Course 2
 endsnippet
 
-snippet !article "Template for Notes on Articles I am Reading" A
+snippet article "Template for Notes on Articles I am Reading" A
 # ${1:title}
 
 **From**: [${2:article}](${3:url})
@@ -51,7 +51,7 @@ snippet !article "Template for Notes on Articles I am Reading" A
 - That are worth exploring](https://example.com/explore)
 - And Possibly Deleting If They Get Their Own Notes](https://example.com/remove)
 endsnippet
-snippet !project "For On Going Projects" A 
+snippet project "For On Going Projects" A 
 # ${1:title}
 
 ## Description
@@ -74,22 +74,22 @@ ${6:execution}
 ## Final Thoughts 
 ${7:final thoughts}
 endsnippet
-snippet !lesson "For individual lessons within a course" A
-# ${1:course} - ${2:Lesson}
+snippet lesson "For individual lessons within a course" A
+# ${1:course} - ${2:section} - ${3:lesson}
 
 ## Lesson Topic
-${3:lesson topic}.
+${4:lesson topic}.
 
 ## House Keeping Notes
 
-- ${4:house keeping notes}
+- ${5:house keeping notes}
 
 ## Content Notes
 
-- ${5:content notes}
+- ${6:content notes}
 
 endsnippet
-snippet !course "For the index of a course" A
+snippet course "For the index of a course" A
 # ${1:course title} - Index
 
 ## Details About Course
@@ -104,7 +104,7 @@ ${2: details on the course}
 | Section 2 | A more specific nothing |
 
 endsnippet
-snippet !section "Course section index" A
+snippet section "Course section index" A
 # ${1:course title} - ${2:section title} 
 
 ## Section Outline
