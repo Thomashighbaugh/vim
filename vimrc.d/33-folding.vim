@@ -12,7 +12,7 @@ set foldlevelstart=10
 set foldnestmax=10
 
 "Spacebar opens and closes fold
-nnoremap <space> za
+nnoremap f za
 
 "Fold based on indent level
 set foldmethod=indent

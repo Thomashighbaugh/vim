@@ -1,11 +1,12 @@
+scriptencoding utf-8
 " ==================================================
 " == Settings ======================================
 " ==================================================
 " ==================================================
 " Basic Settings
 " ==================================================
-set ch=2                 " Make command line two lines high
-set ls=2                 " always show status line
+set cmdheight=2                 " Make command line two lines high
+set laststatus=2                 " always show status line
 set scrolloff=2         " keep 2 lines when scrolling
 set cursorline           " have a line indicate the cursor location
 set cindent              " cindent
@@ -25,19 +26,17 @@ set backspace=indent,eol,start
 set matchpairs+=<:>      " show matching <> (html mainly) as well
 set showmatch
 set matchtime=3
-set sm                   " show matching braces, somewhat annoying...
+set showmatch   " show matching braces, somewhat annoying...
 set mouse=a
-set ttymouse=xterm2
 set history=500          " larger history
 set timeout ttimeoutlen=50
 set confirm " Instead of failing a command because of unsaved changes, instead raise a  dialogue asking if you wish to save changed files.
 set hidden " quickly move between buffers without saving prompt
 set spell spelllang=en_us
 set splitright           " Splits to the right
-autocmd VimResized * wincmd =   " Automatically equalize splits when Vim is resized
+augroup resize | autocmd VimResized * wincmd = | augroup END  " Automatically equalize splits when Vim is resized
 
 set wildmenu                    " show list instead of just completing
-set wildmode=list:longest,full  " command <Tab> completion, list matches, then longest common part, then all.
 set completeopt=menu            " Just show the menu upon completion (faster)
 
 set noswapfile "no troublesome swapfile bs

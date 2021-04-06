@@ -10,6 +10,15 @@ Plug 'PhilRunninger/nerdtree-visual-selection'
 
 Plug 'prabirshrestha/vim-lsp'
 
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
+Plug 'alaviss/nim.nvim'
+
+Plug 'dpretet/vim-leader-mapper'
+
 Plug 'mattn/vim-lsp-settings'
 
 Plug 'ryanoasis/vim-devicons'
@@ -33,7 +42,8 @@ Plug 'tomtom/tlib_vim' " utility functions
 Plug 'MarcWeber/vim-addon-mw-utils'  " interpret a file by function and cache file automatically
 
 Plug 'vim-scripts/DrawIt' "Ascii drawing plugin: lines, ellipses, arrows, fills, and more!
-
+Plug 'ncm2/ncm2' " trial completion
+Plug 'roxma/nvim-yarp' " trial completion 
 Plug 'vim-scripts/Shebang' "Make executable by setting the correct shebang and executable bit
 
 Plug 'jistr/vim-nerdtree-tabs' "nerdtree becomes independent of tabs
@@ -71,8 +81,6 @@ Plug 'vimwiki/vimwiki' " note taking system
 Plug 'mhinz/vim-startify' " startup banner display
 
 Plug 'chiel92/vim-autoformat' " enables formatting of code with keystroke
-
-Plug 'reedes/vim-pencil' " text editing suite to ease writing
 
 Plug 'ryanb/dotfiles' "dotfiles syntax
 

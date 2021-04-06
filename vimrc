@@ -29,7 +29,7 @@ if filereadable(expand("~/.vim/vimrc.before"))
 endif
 
 " ==================================================
-" Source the files ~/.vim/vimrc.d/
+" Source the configuration files ~/.vim/vimrc.d/
 " ==================================================
 for f in split(glob('~/.vim/vimrc.d/*.vim'), '\n')
     exe 'source' f

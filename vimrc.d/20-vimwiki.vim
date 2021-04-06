@@ -2,7 +2,6 @@
 " == Vimwiki ============================
 " =======================================
 "
-set runtimepath+=~/.vimwiki-tech
 
 let wiki = {}
 let wiki.path = '~/.vimwiki-tech'
