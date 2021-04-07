@@ -43,6 +43,7 @@ set noswapfile "no troublesome swapfile bs
 set autowrite " write when switching files
 
 
+
 set modifiable " Allow autocommands to function as intended
 set nocompatible
 

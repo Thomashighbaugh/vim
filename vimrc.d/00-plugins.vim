@@ -42,9 +42,17 @@ Plug 'tomtom/tlib_vim' " utility functions
 Plug 'MarcWeber/vim-addon-mw-utils'  " interpret a file by function and cache file automatically
 
 Plug 'vim-scripts/DrawIt' "Ascii drawing plugin: lines, ellipses, arrows, fills, and more!
+"-----------------------------------------------------------------------------------------------
+"-----------------------------------------------------------------------------------------------
 Plug 'ncm2/ncm2' " trial completion
 Plug 'roxma/nvim-yarp' " trial completion 
-Plug 'vim-scripts/Shebang' "Make executable by setting the correct shebang and executable bit
+    Plug 'ncm2/ncm2-bufword'
+    Plug 'ncm2/ncm2-path'
+    Plug 'ncm2/ncm2-vim-lsp'
+    Plug 'ncm2/ncm2-ultisnips'
+    Plug 'ncm2/ncm2-match-highlight'
+"------------------------------------------------------------------------------------------------
+""-----------------------------------------------------------------------------------------------
 
 Plug 'jistr/vim-nerdtree-tabs' "nerdtree becomes independent of tabs
 
@@ -60,8 +68,6 @@ Plug 'vim-airline/vim-airline' " status bar
 
 Plug 'vim-airline/vim-airline-themes' " status bar themes
 
-Plug 'tpope/vim-unimpaired' "Pairs of handy bracket mappings
-
 Plug 'AndrewRadev/splitjoin.vim' " A vim plugin that simplifies the transition between multiline and single-line code
 
 Plug 'tpope/vim-repeat' " enable repeating supported plugin maps with .
@@ -69,8 +75,6 @@ Plug 'tpope/vim-repeat' " enable repeating supported plugin maps with .
 Plug 'machakann/vim-highlightedyank' " obvious yank area
 
 Plug 'ekalinin/Dockerfile.vim' "dockerfile support
-
-Plug 'tpope/vim-sensible' " sensible defaults for vim
 
 Plug 'tpope/vim-eunuch' " numerous useful functions
 
