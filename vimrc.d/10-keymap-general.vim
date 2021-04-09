@@ -27,19 +27,15 @@ nnoremap N Nzz
 
 " check the existence of |TextYankPost| event.
 if !exists('##TextYankPost')
-  map y <Plug>(highlightedyank)
+    map y <Plug>(highlightedyank)
 endif
 
 " ==================================================
 " vimrc handling
 " ==================================================
 
-" \v loads .vimrc
-" \V reloads .vimrc -- activating changes (needs save)
 
-map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
-"autocmd! bufwritepost $MYVIMRC source $MYVIMRC %
 " ==================================================
 " Window navigation
 " ==================================================
@@ -67,9 +63,9 @@ imap <C-W> <C-O><C-W>
 map - <C-W>-
 map + <C-W>+
 
-    map <C-W>, :sp<CR><C-w>j " Horizontal split
-    map <C-W>. :vsp<CR><C-w>l " Vertical split
-    map <C-/> :close<CR>
+map <C-W>, :sp<CR><C-w>j " Horizontal split
+map <C-W>. :vsp<CR><C-w>l " Vertical split
+map <C-/> :close<CR>
 
 
 " F2 close current split (window)
@@ -85,15 +81,6 @@ nmap <leader>d :b#<bar>bd#<CR>
 nnoremap <silent><leader>S :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
 
-" ==================================================
-" F4 toggles hlsearch on/off, show current value
-"
-" Probably would be better to use unimapaired's coh
-" ==================================================
-noremap <F4> :Deol<CR><C-W>j
-"
-
-
 
 " Map <C-l> (redraw screen) to also turn off search highlighting until the
 " next search
@@ -102,11 +89,11 @@ nnoremap <C-l> :nohl<cr><c-l>
 
 
 " New Tab Control + t
-map <F10> :tabnew<CR>
+map <C-t> :tabnew<CR>
 
 " Navigate Tabs Control+n Control+m
-map <F11> :tabp<CR>
-map <F12> :tabn<CR>
+map <C-g> :tabp<CR>
+map <C-h> :tabn<CR>
 
 " AutoFormat Command
 noremap <F6> :Autoformat<CR>

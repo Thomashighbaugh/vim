@@ -4,7 +4,7 @@ let mapleader = '\\'
 nnoremap <silent> <F7> :LeaderMapper  <CR>
 vnoremap <silent> <F7> :LeaderMapper  <CR>
 let g:leaderMapperPos = 'center'
-let g:leaderMapperWidth = 80
+let g:leaderMapperWidth = 40
 
 " Define the menu dedicated to git
 let gitMenu = {'name':  'Git Menu',
@@ -21,15 +21,23 @@ let g:vimwikiMenu = {'name': 'Vimwiki Menu',
             \'s': [':VimwikiUISelect', 'Select Which Vimwiki to work with'],
             \'t': [':VimwikiTabIndex', 'Vimwiki Tab Index'],
             \}
-
+let g:windowMenu = { 'name': 'Window Meni',
+            \'h': [':split',       'Split buffer horizontally'],
+            \'v' : [':vsplit', 'Split buffer vertically'],
+            \'n' : [':bnext', 'Next buffer'],
+            \'p' : [':bprev', 'Previous buffer'],
+            \'y' : [':res -15', 'Decrease window height by 15'],
+            \'u' : [':res +15', 'Increase window height by 15'],
+            \'i' : [':vertical res +15', 'Increase window width by 15'],
+            \'o' : [':vertical res -15', 'Decrease window width by 15'],
+            \'l': [':ls',          'List opened buffers'],
+            \}
 " Define the menu content including the above menu
 let g:leaderMenu = {'name':  'Global Menu',
             \'f': [gitMenu,        'Git menu'],
-            \'v': [':vsplit',      'Split buffer vertically'],
-            \'h': [':split',       'Split buffer horizontally'],
+            \'v': [windowMenu,      'Window Menu'],
             \'w': [ vimwikiMenu,          'Vimwiki Menu'],
             \'r': [':so $MYVIMRC', 'Reload vimrc without restarting Vim'],
-            \'l': [':ls',          'List opened buffers'],
             \}
 
 
