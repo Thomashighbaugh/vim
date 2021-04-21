@@ -49,9 +49,3 @@ definitions of variables to act upon.
 the files in ``~/.vim/vimrc.d`` allowing override of default settings (e.g:
 color schemes, plugin configuration, etc.).
 
-## Plugins
-@TODO Fill in
-
-
-## Shortcuts
-@TODO fill in

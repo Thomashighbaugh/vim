@@ -26,22 +26,25 @@ set backspace=indent,eol,start
 set matchpairs+=<:>      " show matching <> (html mainly) as well
 set showmatch
 set matchtime=3
-set showmatch   " show matching braces, somewhat annoying...
+set showmatch   " show matching braces
 set mouse=a
 set history=500          " larger history
 set timeout ttimeoutlen=50
 set confirm " Instead of failing a command because of unsaved changes, instead raise a  dialogue asking if you wish to save changed files.
 set hidden " quickly move between buffers without saving prompt
 set spell spelllang=en_us
+
 set splitright           " Splits to the right
-augroup resize | autocmd VimResized * wincmd = | augroup END  " Automatically equalize splits when Vim is resized
+
+augroup resize
+    autocmd VimResized * wincmd =
+augroup END  " Automatically equalize splits when Vim is resized
 
 set wildmenu                    " show list instead of just completing
 set completeopt=menu            " Just show the menu upon completion (faster)
 
 set noswapfile "no troublesome swapfile bs
 set autowrite " write when switching files
-
 
 
 set modifiable " Allow autocommands to function as intended
@@ -59,7 +62,7 @@ set gdefault " Add the g flag to search/replace by default
 " ==================================================
 set tabstop=4            " numbers of spaces of tab character
 set shiftwidth=4         " numbers of spaces to (auto)indent
-set expandtab		     " Tab to spaces by default
+set expandtab            " Tab to spaces by default
 set softtabstop=4
 
 " ==================================================
@@ -86,6 +89,4 @@ set secure
 " Show the (partial) command as it’s being typed
 set showcmd
 
-" Save a file as root (\W)
-noremap <leader>W :w !sudo tee % > /dev/null<CR>
 

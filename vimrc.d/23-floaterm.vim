@@ -12,7 +12,9 @@ tnoremap   <silent>   <F12>   <C-\><C-n>:FloatermKill! <CR>
 
 let g:floaterm_autohide=2
 let g:floaterm_autoclose=2
-let g:floaterm_wintype='vsplit'
-let g:floaterm_position='bottomright'
+let g:floaterm_wintype='float'
+let g:floaterm_position='botright'
 let g:floaterm_width=0.4
 let floaterm_height=0.4
+
+

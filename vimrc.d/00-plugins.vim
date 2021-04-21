@@ -12,6 +12,9 @@ Plug 'jistr/vim-nerdtree-tabs' "nerdtree becomes independent of tabs
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'PhilRunninger/nerdtree-visual-selection'
 
+Plug 'lambdalisue/suda.vim'
+Plug 'sbdchd/neoformat'
+
 "Menu System
 Plug 'dpretet/vim-leader-mapper'
 
@@ -24,8 +27,6 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'ryanoasis/vim-devicons'
 
-"Tasklist
-Plug 'vim-scripts/TaskList.vim' "Eclipse like task list
 
 "Terminal
 Plug 'voldikss/vim-floaterm'
@@ -33,8 +34,7 @@ Plug 'voldikss/vim-floaterm'
 " Git Wrapper
 Plug 'tpope/vim-fugitive' " git wrapper
 
-"Fuzzy Finder
-Plug 'ctrlpvim/ctrlp.vim' " fuzzy file / buffer / mru / tag / whatever finder
+
 
 "Snippets
 Plug 'sirver/ultisnips' " snippet solution
@@ -46,11 +46,25 @@ Plug 'MarcWeber/vim-addon-mw-utils'  " interpret a file by function and cache fi
 "Completion
 Plug 'ncm2/ncm2' " trial completion
 Plug 'roxma/nvim-yarp' " trial completion
+
+" enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
+set completeopt=noinsert,menuone,noselect
+
+" Plugins for ncm2
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-vim-lsp'
 Plug 'ncm2/ncm2-ultisnips'
 Plug 'ncm2/ncm2-match-highlight'
+Plug 'ncm2/ncm2-ultisnips'
+Plug 'ncm2/ncm2-vim-lsp'
+Plug 'ncm2/ncm2-syntax'
+Plug 'fgrsnau/ncm2-aspell'
+Plug 'yuki-ycino/ncm2-dictionary'
+Plug 'ncm2/ncm2-path'
+Plug 'ncm2/ncm2-path'
+
 
 " Documentation Browser
 Plug 'powerman/vim-plugin-viewdoc' "view documentation
@@ -70,20 +84,17 @@ Plug 'tpope/vim-eunuch' " numerous useful functions
 " Notes System
 Plug 'vimwiki/vimwiki' " note taking system
 
-"Startup Banner
-Plug 'mhinz/vim-startify' " startup banner display
 
 "Syntax Highlighting and Formatting
 Plug 'chiel92/vim-autoformat' " enables formatting of code with keystroke
-Plug 'ryanb/dotfiles' "dotfiles syntax
+Plug 'ryanb/dotfiles' " dotfiles syntax
 Plug 'mvdan/sh' " shell formatter
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' } " provides prettier formatter
 Plug 'moll/vim-node' " node support
-Plug 'sheerun/vim-polyglot'
-Plug 'alaviss/nim.nvim'
-Plug 'sbdchd/neoformat'
-Plug 'vim-scripts/jsbeautify'
+Plug 'sheerun/vim-polyglot' "syntax highlighting for 70+ languages
+Plug 'alaviss/nim.nvim' " Nim programming language
+Plug 'sbdchd/neoformat' "formatting
 
 "Editor Configuration
 Plug 'editorconfig/editorconfig-vim' "use of editor config within
@@ -91,12 +102,16 @@ Plug 'editorconfig/editorconfig-vim' "use of editor config within
 "Commenting
 Plug 'scrooloose/nerdcommenter'
 
-
-
-
+" Color Scheme
 Plug 'rakr/vim-one'
 Plug 'joshdick/onedark.vim'
 
 Plug 'w0rp/ale'
+
+" Fuzzy Finder
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+
+" Dashboard
+Plug 'glepnir/dashboard-nvim'
 
 call plug#end()

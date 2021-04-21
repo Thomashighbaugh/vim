@@ -30,9 +30,6 @@ if !exists('##TextYankPost')
     map y <Plug>(highlightedyank)
 endif
 
-" ==================================================
-" vimrc handling
-" ==================================================
 
 
 
@@ -91,10 +88,14 @@ nnoremap <C-l> :nohl<cr><c-l>
 " New Tab Control + t
 map <C-t> :tabnew<CR>
 
-" Navigate Tabs Control+n Control+m
+" Navigate Tabs Control+g Control+h
 map <C-g> :tabp<CR>
 map <C-h> :tabn<CR>
 
 " AutoFormat Command
 noremap <F6> :Autoformat<CR>
+
+
+" Save a file as root (\W)
+noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
