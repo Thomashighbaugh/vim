@@ -1,8 +1,8 @@
 " Define leader key and call vim-leader-mapper
 nnoremap <Space> <Nop>
-let mapleader = '\\'
-nnoremap <silent> <F7> :LeaderMapper  <CR>
-vnoremap <silent> <F7> :LeaderMapper  <CR>
+let mapleader = '\'
+nnoremap <silent> <Leader> :LeaderMapper  <CR>
+vnoremap <silent> <Leader> :LeaderMapper  <CR>
 let g:leaderMapperPos = 'center'
 let g:leaderMapperWidth = 40
 

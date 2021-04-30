@@ -36,35 +36,29 @@ Plug 'tpope/vim-fugitive' " git wrapper
 
 
 
-"Snippets
-Plug 'sirver/ultisnips' " snippet solution
+
+
 Plug 'honza/vim-snippets' " snippets
 "Misc Utilities
 Plug 'tomtom/tlib_vim' " utility functions
 Plug 'MarcWeber/vim-addon-mw-utils'  " interpret a file by function and cache file automatically
 
 "Completion
-Plug 'ncm2/ncm2' " trial completion
-Plug 'roxma/nvim-yarp' " trial completion
 
-" enable ncm2 for all buffers
-autocmd BufEnter * call ncm2#enable_for_buffer()
-set completeopt=noinsert,menuone,noselect
+if has('nvim')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
 
-" Plugins for ncm2
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
-Plug 'ncm2/ncm2-vim-lsp'
-Plug 'ncm2/ncm2-ultisnips'
-Plug 'ncm2/ncm2-match-highlight'
-Plug 'ncm2/ncm2-ultisnips'
-Plug 'ncm2/ncm2-vim-lsp'
-Plug 'ncm2/ncm2-syntax'
-Plug 'fgrsnau/ncm2-aspell'
-Plug 'yuki-ycino/ncm2-dictionary'
-Plug 'ncm2/ncm2-path'
-Plug 'ncm2/ncm2-path'
-
+Plug 'Shougo/neco-syntax'
+" SNippets 
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Documentation Browser
 Plug 'powerman/vim-plugin-viewdoc' "view documentation

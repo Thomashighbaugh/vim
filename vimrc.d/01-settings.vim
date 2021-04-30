@@ -34,6 +34,8 @@ set confirm " Instead of failing a command because of unsaved changes, instead r
 set hidden " quickly move between buffers without saving prompt
 set spell spelllang=en_us
 
+set clipboard=unnamed " makes vim copy text to the same clipboard as the system 
+
 set splitright           " Splits to the right
 
 augroup resize
