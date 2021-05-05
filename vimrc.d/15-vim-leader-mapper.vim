@@ -4,7 +4,7 @@ let mapleader = '\'
 nnoremap <silent> <Leader> :LeaderMapper  <CR>
 vnoremap <silent> <Leader> :LeaderMapper  <CR>
 let g:leaderMapperPos = 'center'
-let g:leaderMapperWidth = 40
+let g:leaderMapperWidth = 30
 
 " Define the menu dedicated to git
 let gitMenu = {'name':  'Git Menu',

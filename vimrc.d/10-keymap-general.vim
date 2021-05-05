@@ -34,7 +34,7 @@ endif
 
 
 " ==================================================
-" Window navigation
+" Window
 " ==================================================
 
 " control + vim direction key to navigate windows
@@ -49,16 +49,18 @@ noremap <C-Up> <C-W>k
 noremap <C-Left> <C-W>h
 noremap <C-Right> <C-W>l
 
-" ==================================================
-" Splits handling
-" ==================================================
+" Use alt + hjkl to resize windows
+nnoremap <silent> <M-Up>    :resize -2<CR>
 
-" Make these all work in insert mode
-imap <C-W> <C-O><C-W>
-
+nnoremap <silent> <M-Down>    :resize +2<CR>
+nnoremap <silent> <M-Left>    :vertical resize -2<CR>
+nnoremap <silent> <M-Right>    :vertical resize +2<CR>
 " - and + to resize horizontal splits
 map - <C-W>-
 map + <C-W>+
+
+" Make these all work in insert mode
+imap <C-W> <C-O><C-W>
 
 map <C-W>, :sp<CR><C-w>j " Horizontal split
 map <C-W>. :vsp<CR><C-w>l " Vertical split
@@ -99,3 +101,10 @@ noremap <F6> :Autoformat<CR>
 " Save a file as root (\W)
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
+
+" Alternate way to save
+nnoremap <silent> <C-s> :w<CR>
+" Alternate way to quit
+nnoremap <silent> <C-Q> :wq!<CR>
+" <TAB>: completion.
+inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"

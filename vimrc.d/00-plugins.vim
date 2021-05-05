@@ -53,9 +53,10 @@ else
     Plug 'roxma/vim-hug-neovim-rpc'
 endif
 let g:deoplete#enable_at_startup = 1
-
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
 Plug 'Shougo/neco-syntax'
-" SNippets 
+" SNippets
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'Shougo/deoppet.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -102,10 +103,39 @@ Plug 'joshdick/onedark.vim'
 
 Plug 'w0rp/ale'
 
+" Better tabline
+Plug 'mg979/vim-xtabline'
+" undo time travel
+Plug 'mbbill/undotree'
+" Find and replace
+Plug 'brooth/far.vim'
+" Auto change html tags
+Plug 'AndrewRadev/tagalong.vim'
+" live server
+Plug 'turbio/bracey.vim'
+" Smooth scroll
+Plug 'psliwka/vim-smoothie'
+" async tasks
+Plug 'skywind3000/asynctasks.vim'
+Plug 'skywind3000/asyncrun.vim'
 " Fuzzy Finder
 Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 
+" Auto pairs for '(' '[' '{'
+Plug 'jiangmiao/auto-pairs'
+" Cool Icons
+Plug 'ryanoasis/vim-devicons'
+" auto set indent settings
+Plug 'tpope/vim-sleuth'
+" Have the file system follow you around
+Plug 'airblade/vim-rooter'
+" Sneak
+Plug 'justinmk/vim-sneak'
+" Surround
+Plug 'tpope/vim-surround'
 " Dashboard
 Plug 'glepnir/dashboard-nvim'
 
+" Echo doc
+Plug 'Shougo/echodoc.vim'
 call plug#end()

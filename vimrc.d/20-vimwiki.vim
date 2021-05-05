@@ -29,4 +29,4 @@ let g:vimwiki_folding = 'expr'
 let g:vimwiki_auto_chdir = 1
 let g:vimwiki_table_mappings = 0
 
-silent! iunmap <buffer> <Tab>
+

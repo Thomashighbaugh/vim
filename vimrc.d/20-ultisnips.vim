@@ -15,11 +15,10 @@
 let g:snips_author="Thomas Leon Highbaugh <admin@thomasleonhighbaugh.me>"
 
 
-let g:UltiSnipsRemoveSelectModeMappings = 0
 call deoppet#initialize()
 call deoppet#custom#option('snippets',
-            \ map(globpath(&runtimepath, 'snippets', 1, 1),
-            \     "{ 'path': v:val }"))
+            \ map(globpath(&runtimepath, '/home/tlh/.vim/snippets', 1, 1),
+            \     "{ 'path': /home/tlh/.vim/snippets }"))
 
 imap <C-k>  <Plug>(deoppet_expand)
 imap <C-f>  <Plug>(deoppet_jump_forward)

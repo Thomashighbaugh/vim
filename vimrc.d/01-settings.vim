@@ -20,6 +20,9 @@ set number               " show line numbers
 set title                " show title in console title bar
 set ttyfast              " smoother changes
 set modeline             " last lines in document sets vim mode
+
+set t_Co=256                            " Support 256 colors
+
 set shortmess=atI        " Abbreviate messages
 set nostartofline        " don't jump to first character when paging
 set backspace=indent,eol,start
@@ -34,7 +37,7 @@ set confirm " Instead of failing a command because of unsaved changes, instead r
 set hidden " quickly move between buffers without saving prompt
 set spell spelllang=en_us
 
-set clipboard=unnamed " makes vim copy text to the same clipboard as the system 
+set clipboard=unnamed " makes vim copy text to the same clipboard as the system
 
 set splitright           " Splits to the right
 
@@ -58,7 +61,7 @@ filetype indent plugin on
 
 set gdefault " Add the g flag to search/replace by default
 
-
+set noshowmode
 " ==================================================
 " Tab expanded to 4 spaces
 " ==================================================
@@ -66,7 +69,9 @@ set tabstop=4            " numbers of spaces of tab character
 set shiftwidth=4         " numbers of spaces to (auto)indent
 set expandtab            " Tab to spaces by default
 set softtabstop=4
-
+set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
+set smartindent                         " Makes indenting smart
+set autoindent                          " Good auto indent
 " ==================================================
 " Search settings
 " ==================================================
@@ -92,3 +97,12 @@ set secure
 set showcmd
 
 
+set autochdir                           " Your working directory will always be the same as your working directory
+
+set fileencoding=utf-8                  " The encoding written to file
+
+set conceallevel=0                      " So that I can see `` in markdown files
+
+
+
+au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
