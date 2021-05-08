@@ -1,0 +1,10 @@
+author: "Thomas Leon Highbaugh"
+colorschemes:
+  - background: dark
+    name: vice
+    palette: vice
+description: "Vice color scheme for vim/nvim with lightline & airline support"
+license: MIT
+name: vice
+url: https://github.com/Thomashighbaugh/base16-vice-scheme
+version: 1.0.0

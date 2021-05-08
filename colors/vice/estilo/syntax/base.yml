@@ -1,0 +1,79 @@
+Boolean: ""
+Character: ""
+ColorColumn: ""
+Comment: ""
+Conceal: ""
+Conditional: ""
+Constant: ""
+Cursor: ""
+CursorColumn: ""
+CursorIM: ""
+CursorLine: ""
+Debug: color
+Define: ""
+Delimiter: ""
+DiffAdd: ""
+DiffChange: ""
+DiffDelete: ""
+DiffText: ""
+Directory: ""
+Error: 'color9 color21 bu'
+ErrorMsg: ""
+Exception: ""
+Float: ""
+FoldColumn: ""
+Folded: ""
+Function: ""
+Identifier: ""
+Ignore: 'color19 color21'
+IncSearch: ""
+Include: ""
+Keyword: ""
+Label: ""
+LineNr: ""
+Macro: ""
+MatchParen: ""
+ModeMsg: ""
+MoreMsg: ""
+NonText: ""
+Normal: 'base7 base21'
+Number: ""
+Operator: ""
+PMenu: @Normal
+PMenuSel: @Normal
+PmenuSbar: @Normal
+PmenuThumb: @Normal
+PreCondit: ""
+PreProc: ""
+Question: 'color15 color21'
+Repeat: ""
+Search: @Normal
+SignColumn: ""
+Special: ""
+SpecialChar: ""
+SpecialComment: 'color15 color21'
+SpecialKey: 'color5 color21'
+SpellBad: 'color9 color21'
+SpellCap: 'color15 color21'
+SpellLocal: "color10 color21"
+SpellRare: ""
+Statement: ""
+StatusLine: ""
+StatusLineNC: ""
+StorageClass: ""
+String: ""
+Structure: ""
+TabLine: ""
+TabLineFill: ""
+TabLineSel: ""
+Tag: ""
+Title: ""
+Todo: 'color11 color21 bu'
+Type: ""
+Typedef: ""
+Underlined: 'color15 color21 u'
+VertSplit: ""
+Visual: ""
+VisualNOS: ""
+WarningMsg: ""
+WildMenu: ""

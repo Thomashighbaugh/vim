@@ -35,6 +35,8 @@ Plug 'voldikss/vim-floaterm'
 Plug 'tpope/vim-fugitive' " git wrapper
 
 
+" Color Highlight
+Plug 'coldfix/hexHighlight'
 
 
 
@@ -113,8 +115,6 @@ Plug 'brooth/far.vim'
 Plug 'AndrewRadev/tagalong.vim'
 " live server
 Plug 'turbio/bracey.vim'
-" Smooth scroll
-Plug 'psliwka/vim-smoothie'
 " async tasks
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
